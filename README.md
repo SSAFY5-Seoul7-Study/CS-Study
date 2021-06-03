@@ -38,7 +38,7 @@
 
   - Array
   - LinkedList
-  - Array & ArrayList & LinkedList
+  - [Array & ArrayList & LinkedList](https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/main/Computer%20Science/Data%20Structure/Array%20vs%20ArrayList%20vs%20LinkedList.md)
   - 스택(Stack) & 큐(Queue)
   - 힙(Heap)
   - 이진탐색트리(Binary Search Tree)

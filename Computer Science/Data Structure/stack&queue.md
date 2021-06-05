@@ -1,10 +1,10 @@
 ## 스택(Stack)
 
-입력과 출력이 한 곳(방향)으로 제한
+입력과 출력이 한 곳(방향)으로 제한 즉, 자료를 가르키는 포인터가 하나!
 
 ##### LIFO (Last In First Out, 후입선출) : 가장 나중에 들어온 것이 가장 먼저 나옴
 
-<img width="100" alt="캡처" src="https://user-images.githubusercontent.com/54837242/120880937-69ae4a00-c608-11eb-9d77-8325043a1eb3.PNG">
+![image](https://user-images.githubusercontent.com/54837242/120880937-69ae4a00-c608-11eb-9d77-8325043a1eb3.PNG)
 
 **_언제 사용?_**
 
@@ -226,7 +226,7 @@ public class Stack {
 
 ## 큐(Queue)
 
-입력과 출력을 한 쪽 끝(front, rear)으로 제한
+입력과 출력을 한 쪽 끝(front, rear)으로 제한 (포인터 갯수가 2)
 
 ##### FIFO (First In First Out, 선입선출) : 가장 먼저 들어온 것이 가장 먼저 나옴
 
@@ -234,7 +234,8 @@ public class Stack {
 
 **_언제 사용?_**
 
-버퍼, 마구 입력된 것을 처리하지 못하고 있는 상황, BFS
+버퍼, 마구 입력된 것을 처리하지 못하고 있는 상황, BFS  
+※시스템 처리의 순서가 중요할때 front로 사용되는 자료구조(교통정리,스케줄러)
 
 <br>
 
@@ -511,3 +512,8 @@ public T dequeue() {
 <br>
 
 이처럼 삽입은 tail, 제거는 head로 하면서 삽입/삭제를 스택처럼 O(1)에 가능하도록 구현이 가능하다.
+
+### 나중에 지울꺼
+
+기본적으로 stack과 queue는 선형 구조이다.
+![image](https://user-images.githubusercontent.com/54837242/120881340-4e910980-c60b-11eb-94b6-e97842d5ba58.PNG)

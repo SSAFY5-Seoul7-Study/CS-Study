@@ -81,7 +81,7 @@
   - [프로세스 vs 스레드](https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/fea6559da51bbcdca45e097afd75a7821a72cfc8/Computer%20Science/Operation%20System/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4&%EC%8A%A4%EB%A0%88%EB%93%9C.md)
   - [프로세스 주소 공간](https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/main/Computer%20Science/Operation%20System/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%20%EC%A3%BC%EC%86%8C%20%EA%B3%B5%EA%B0%84.md)
   - [인터럽트(Interrupt)](https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/main/Computer%20Science/Operation%20System/%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8.md)
-  - 시스템 콜(System Call)
+  - [시스템 콜(System Call)](https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/4d060c2da82e339967f38ebd56f08b3d4b3d55c6/Computer%20Science/Operation%20System/%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%BD%9C.md)
   - PCB와 Context Switching
   - IPC(Inter Process Communication)
   - CPU 스케줄링

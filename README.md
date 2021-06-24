@@ -189,7 +189,7 @@
 - UI와 UX
 - CSR & SSR
 - Vue.js vs React
-- 네이티브 앱 & 웹 앱 & 하이브리드 앱
+- [네이티브 앱 & 웹 앱 & 하이브리드 앱](https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/main/Computer%20Science/Web/%EB%84%A4%EC%9D%B4%ED%8B%B0%EB%B8%8C%20%EC%95%B1%20vs%20%EC%9B%B9%20%EC%95%B1%20vs%20%ED%95%98%EC%9D%B4%EB%B8%8C%EB%A6%AC%EB%93%9C%20%EC%95%B1.md)
 - PWA(Progressive Web App)
 - CSRF & XSS
 - Vue.js

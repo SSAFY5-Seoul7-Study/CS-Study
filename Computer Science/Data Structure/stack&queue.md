@@ -361,8 +361,7 @@ rear가 사이즈-1과 같아지면 가득찬 것
 이를 개선한 것이 **'원형 큐'**
 
 논리적으로 배열의 처음과 끝이 연결되어 있는 것으로 간주함!
-
-<br>
+![image](https://user-images.githubusercontent.com/54837242/120881507-906e7f80-c60c-11eb-8bce-596337fa1fbf.PNG)
 
 원형 큐는 초기 공백 상태일 때 front와 rear가 0
 
@@ -452,8 +451,8 @@ rear+1%size가 front와 같으면 가득찬 것
 
 <br>
 
-원형 큐의 단점 : 메모리 공간은 잘 활용하지만, 배열로 구현되어 있기 때문에 큐의 크기가 제한
-
+원형 큐의 단점 : 메모리 공간은 잘 활용하지만, 배열로 구현되어 있기 때문에 큐의 크기가 제한  
+일반 배열로 구현했을때 생성->복사 과정이 복잡해 속도와 안전성이 떨어짐.
 <br>
 
 <br>
@@ -513,7 +512,158 @@ public T dequeue() {
 
 이처럼 삽입은 tail, 제거는 head로 하면서 삽입/삭제를 스택처럼 O(1)에 가능하도록 구현이 가능하다.
 
+## 덱(Deque-[double-ended queue])
+
+두 개의 포인터를 사용하여, 양쪽에서 삭제와 삽입을 발생 시킬 수 있다. 큐와 스택을 합친 형태로 생각할 수 있다.
+
+데이터 넣음 : append(o): 오른쪽, appendleft(o): 왼쪽
+
+데이터 뺌 : pop(o): 오른쪽, popleft(o): 왼쪽
+
+비어있는 지 확인 : isEmpty()
+
+꽉차있는 지 확인 : isFull()
+
+<br>
+
+**_언제 사용?_**
+
+데이터 검색을 거의 하지 않을 경우(랜덤액세스)
+스케줄링, 스케줄링에 우선순위를 줄때 큐와 스택보다 덱이 더 효율이 잘나오는 경우가 있다.  
+컨테이너(container)의 양끝 엘리먼트(element)에 접근하여 삽입 또는 제거를 할 경우, 일반적인 리스트(list)가 이러한 연산에 O(n)이 소요되는 데 반해, 데크(deque)는 O(1)로 접근 가능하다.(단, list로 구현한 덱은 제외)
+
+<br>
+
+java에서 구현
+
+```java
+class Node<E>{
+
+private E data;
+private Node<E> next;
+private Node<E> prev;
+
+Node(E data) {
+this.data = data;
+this.next = null;
+this.prev = null;
+}
+
+void setNext(Node<E> next) {
+this.next = next;
+}
+
+void setPrev(Node<E> prev) {
+this.prev = prev;
+}
+
+void setData(E data) {
+this.data = data;
+}
+
+Node<E> getNext() {
+return next;
+}
+
+Node<E> getPrev() {
+return prev;
+}
+
+E getData() {
+return data;
+}
+};
+```
+
+```java
+public class Deque<E>{
+
+private Node<E> front;
+private Node<E> rear;
+
+Deque() {
+front = rear = null;
+}
+
+-- setter,getter--
+
+boolean empty() {
+if (front == null) return true;
+else return false;
+}
+
+boolean push_front(E data) {
+ if (empty()) {
+    front = new Node<E>(data);
+    rear = front;
+    return true;
+}
+front.setPrev(new Node<E>(data));
+front.getPrev().setNext(front);
+front = front.getPrev();
+return true;
+}
+
+boolean push_rear(E data) {
+if (empty()) {
+    rear = new Node<E>(data);
+    front = rear;
+    return true;
+}
+rear.setNext(new Node<E>(data));
+rear.getNext().setPrev(rear);
+rear = rear.getNext();
+return true;
+}
+
+E pop_front() {
+E tmp = front.getData();
+if (empty()) return null;
+if (front == rear) {
+    front = null;
+    rear = null;
+    return tmp;
+}
+front = front.getNext();
+front.setPrev(null);
+return tmp;
+}
+
+E pop_rear() {
+E tmp = rear.getData();
+if (empty()) return null;
+if (front == rear) {
+    front = null;
+    rear = null;
+    return tmp;
+}
+rear = rear.getPrev();
+rear.setNext(null);
+return tmp;
+}
+
+E begin() {
+return front.getData();
+}
+
+E end() {
+return rear.getData();
+}
+
+}
+```
+
 ### 나중에 지울꺼
 
 기본적으로 stack과 queue는 선형 구조이다.
 ![image](https://user-images.githubusercontent.com/54837242/120881340-4e910980-c60b-11eb-94b6-e97842d5ba58.PNG)
+
+**Native Code와 Managed Code란?**
+
+Native Code는 컴퓨터 기계어로 동작하는  
+즉, OS에 의해 직접적으로 컴파일 되는 코드를 의미한다.  
+작성한 코드 그대로 컴퓨터에서 구동이 된다. 컴퓨터와 매우 밀접한 관계가 있다.
+
+반대로 Managed Code는 구동 시키기 위해선 인터프리터라고 불리우는 다른 프로그램이 반드시 요구 되는 코드를 의미한다.  
+자바 버츄어 머신이나 .Net Framework와 같은 인터프리터가 필요한 코드를 의미한다.
+구동하기 위해선 반드시 인터프리터를 깔아야한다.

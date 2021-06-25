@@ -6,6 +6,6 @@ CPU 스케줄링
 
 #
 
-# 선점 스케줄링 (Preemptive Scheduling) 과 비선점형 스케줄링 (Non-preemptive / Cooperative Scheduling)
+### 선점 스케줄링 (Preemptive Scheduling) 과 비선점형 스케줄링 (Non-preemptive / Cooperative Scheduling)
 
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FLsrGp%2FbtqAy2czHB3%2FsuK2XUkUJ9Dr7G3xCa2CzK%2Fimg.png)

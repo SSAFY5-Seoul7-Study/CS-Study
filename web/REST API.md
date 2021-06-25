@@ -70,8 +70,8 @@ REST(REpresentational State Transfer)
       - **<u>Request만 Message로 처리</u>**하면 되고, 컨텍스트 정보를 신경쓰지 않아도 되므로, **<u>구현이 단순해짐</u>**.
       - 따라서, REST API 실행중 실패가 발생한 경우, Transaction 복구를 위해 기존의 상태를 저장할 필요가 있다. (POST Method 제외)<br><br>
 
-    - Caching: HTTP의 캐싱기능 적용 가능 (GET)
     - Self-descriptiveness: 자체 표현 구조 (메시지만 보고도 이를 쉽게 이해할 수 있는 자체 표현 구현 구조)
+    - Caching: HTTP의 캐싱기능 적용 가능 (GET)
     - Client-Server: 클라이언트와 서버의 역할이 구분
     - Hierachical System: 다중 계층으로 구성
 

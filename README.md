@@ -179,8 +179,8 @@
 
 - [브라우저 동작 방법](https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/main/web/%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%20%EB%8F%99%EC%9E%91%20%EB%B0%A9%EB%B2%95.md)
 - 쿠키(Cookie) & 세션(Session)
-- HTTP Status Code
-- REST API
+- [HTTP Status Code](https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/main/web/HTTP%20StatusCode.md)
+- [REST API](https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/main/web/REST%20API.md)
 - 웹 서버와 WAS의 차이점
 - OAuth
 - JWT(JSON Web Token)

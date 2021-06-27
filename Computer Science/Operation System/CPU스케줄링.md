@@ -87,10 +87,9 @@ Round Robin + SJF 를 합한 개념
 
 #### MLQ(Multi Level Queue)
 ```
-우선 순위 계산하여 점유 불평등 보완 (SJF 단점 보완)
-장점 : 긴작업과 짧은 작업 간 불평등 완화
-      -> 시분할 시스템에 활용 시 유용
-단점 : 준비상태 큐에 있는 각 프로세스의 서비스 시간을 지속적으로 추적 -> Overhead 증가
+준비 상태 큐를 여러 개 두어 스케줄링
+다른 큐로 작업 이동 불가, 우선순위에 따른 선점
+단점 : 우선순위 낮은 큐는 실행 못함 -> MLFQ
 ```
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FlDJG3%2Fbtqy2nCixut%2Fe4oZCNSJZ9VwGcHh4aSJ4k%2Fimg.png)
 
@@ -98,10 +97,7 @@ Round Robin + SJF 를 합한 개념
 
 #### MLFQ(Multi Level Feedback Queue)
 ```
-우선 순위 계산하여 점유 불평등 보완 (SJF 단점 보완)
-장점 : 긴작업과 짧은 작업 간 불평등 완화
-      -> 시분할 시스템에 활용 시 유용
-단점 : 준비상태 큐에 있는 각 프로세스의 서비스 시간을 지속적으로 추적 -> Overhead 증가
+MLQ + CPU Time Slice(Quantum) 
 ```
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbwBFm7%2FbtqDVVUx70l%2F7ChfApVM5qkAUQUMC9HuXK%2Fimg.jpg)
 

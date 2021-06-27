@@ -28,16 +28,22 @@ CPU 스케줄링
 ### 비선점 방식
 
 #### FCFS (First Come First Service)
-> 선입선출(FIFO) , 도착 순대로 CPU 할당
-> 장점 : 일괄 처리 시스템 등에 적합 , 단점 : 호위 효과(convoy effect) 발생 가능성 ↑
+
+```
+선입선출(FIFO) , 도착 순대로 CPU 할당
+장점 : 일괄 처리 시스템 등에 적합 , 단점 : 호위 효과(convoy effect) 발생 가능성 ↑
+```
+
 
 ![image](https://media.vlpt.us/images/yerin4847/post/b0487918-7782-43be-bbfa-ce360c81af88/image.png)
 
 #
 
 #### SJF (Shortest Job First)
-> CPU 작업 시간이 가장 짧은 순으로 스케줄링 , 작업 시간 동일 -> FCFS
-> 장점 : 평균 대기 시간 최소화 , 단점 : 무기한 연기 현상 발생 -> 밀리지 않게 Aging 기법 , 프로세스 생성 시 총 실행 시간에 대한 정확한 계산 불가능
+```
+CPU 작업 시간이 가장 짧은 순으로 스케줄링 , 작업 시간 동일 -> FCFS
+장점 : 평균 대기 시간 최소화 , 단점 : 무기한 연기 현상 발생 -> 밀리지 않게 Aging 기법 , 프로세스 생성 시 총 실행 시간에 대한 정확한 계산 불가능
+```
 
 ![image](https://media.vlpt.us/images/yerin4847/post/b0487918-7782-43be-bbfa-ce360c81af88/image.png)
 

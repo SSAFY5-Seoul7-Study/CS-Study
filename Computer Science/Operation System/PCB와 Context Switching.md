@@ -6,7 +6,8 @@
 ```
 
 #### Context Swithching 이란 무엇일까?
-![image](img\선점비선점스케줄링.PNG)
+![image](https://user-images.githubusercontent.com/58067265/123517290-2319b000-d6db-11eb-9ff3-e2d53c315c8f.png)
+```
 멀티프로세스/멀티스레드 환경일때, cpu가 task(프로세스/스레드)를 실행하고 있는 상태에서 인터럽트 요청에 의해 다음 우선순위의 Task가 실행되어야 한다.
 이때 기존의 Task상태 또는 레지스터 값을 교체하는 작업을 말한다.
 ```

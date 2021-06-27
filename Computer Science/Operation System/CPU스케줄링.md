@@ -23,7 +23,7 @@ CPU 스케줄링
 
 ### CPU 스케줄링 알고리즘 종류
 
-![image](C:\Users\gikim123\git\CS-Study\Computer Science\Operation System\img\선점비선점스케줄링.PNG)
+![image](img\선점비선점스케줄링.PNG)
 
 ### 비선점 방식
 

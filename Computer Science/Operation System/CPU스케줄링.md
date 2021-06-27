@@ -27,6 +27,9 @@ CPU 스케줄링
 + 대기 상태에서 준비상태로 전환될 때 (ex. 입출력 종료시)
 + 종료될 때
 
+![image](https://t1.daumcdn.net/cfile/tistory/27033450580366160E)
+
+#
 
 ### CPU 스케줄링 알고리즘 종류
 

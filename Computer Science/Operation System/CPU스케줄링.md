@@ -21,6 +21,13 @@ CPU 스케줄링
 
 #
 
+### CPU 스케줄링 발생 하는 상황
++ 실행상태에서 대기상태로 전환될 때 (ex. 입출력 요청)
++ 실행상태에서 준비상태로 전환될 때 (ex. 인터럽트 발생)
++ 대기 상태에서 준비상태로 전환될 때 (ex. 입출력 종료시)
++ 종료될 때
+
+
 ### CPU 스케줄링 알고리즘 종류
 
 ![image](https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/7e4cd5d22addf0ac19edde2a23760b7272342e0e/Computer%20Science/Operation%20System/img/%EC%84%A0%EC%A0%90%EB%B9%84%EC%84%A0%EC%A0%90%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81.PNG)
@@ -28,7 +35,7 @@ CPU 스케줄링
 #
 
 ### 비선점 방식
-> 프로세스가 시행 중이라도 강제 중지하고 CPU 뺏을 수 있는 스케줄링
+> 프로세스가 CPU 할당 받아 실행 중이면 강제로 CPU 뺏을 수 없는 스케줄링
 
 #### FCFS (First Come First Service)
 
@@ -49,11 +56,9 @@ CPU 작업 시간이 가장 짧은 순으로 스케줄링 , 작업 시간 동일
 단점 : 무기한 연기 현상 발생 -> 밀리지 않게 Aging 기법 , 프로세스 생성 시 총 실행 시간에 대한 정확한 계산 불가능
 ```
 
-![image](https://media.vlpt.us/images/yerin4847/post/b0487918-7782-43be-bbfa-ce360c81af88/image.png)
-
 #
 
-#### SJF (Shortest Job First)
+#### HRN (Highest Response-ratio Next)
 ```
 우선 순위 계산하여 점유 불평등 보완 (SJF 단점 보완)
 장점 : 긴작업과 짧은 작업 간 불평등 완화
@@ -64,8 +69,9 @@ CPU 작업 시간이 가장 짧은 순으로 스케줄링 , 작업 시간 동일
 
 #
 
-### 비선점 방식
-> 프로세스가 CPU 할당 받아 실행 중이면 강제로 CPU 뻇을 수 없는 스케줄링
+
+### 선점 방식
+> 프로세스가 시행 중이라도 강제 중지하고 CPU 뺏을 수 있는 스케줄링
 
 #### Round Robin
 ```
@@ -79,15 +85,17 @@ CPU 작업 시간이 가장 짧은 순으로 스케줄링 , 작업 시간 동일
 
 #### SRT (Shortest Remaining Time)
 ```
-Round Robin + SJF 를 합한 개념
+SJF에 선점 방식 도입, 처리가 완료 되는데 가장 짧은 시간이 소요된다 판단되는 프로세스를 먼저 수행
+-> 진행 중인 프로세스 있어도 최단 잔여시간 프로세스를 위해 짧은 프로세스를 할당
 ```
 ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdLGZ4s%2Fbtqy4dFPWQM%2FJFTdMtaGKf9X40NzA2GbLk%2Fimg.png)
 
 #
 
-#### MLQ(Multi Level Queue)
+#### MLQ(Multi Level Queue) : 다단계 큐 스케줄링
 ```
 준비 상태 큐를 여러 개 두어 스케줄링
+각 큐의 독자적인 스케줄링 알고리즘으로 CPU 할당
 다른 큐로 작업 이동 불가, 우선순위에 따른 선점
 단점 : 우선순위 낮은 큐는 실행 못함 -> MLFQ
 ```
@@ -95,11 +103,17 @@ Round Robin + SJF 를 합한 개념
 
 #
 
-#### MLFQ(Multi Level Feedback Queue)
+#### MLFQ(Multi Level Feedback Queue) : 다단계 피드백 큐 스케줄링
 ```
-MLQ + CPU Time Slice(Quantum) 
+MLQ + CPU Time Slice(Quantum)
+동적인 프로세스 우선 순위 변화 적용 !
+
+** RR방식과 함께 가장 많이 사용 !
 ```
-![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbwBFm7%2FbtqDVVUx70l%2F7ChfApVM5qkAUQUMC9HuXK%2Fimg.jpg)
++ 우선순위 낮을수록 시간 할당량(Time Quantum) ↑
++ 큐 사이 프로세스 이동 가능
++ 맨 아래 큐에서 오래 대기하면 상위 큐로 이동
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FkHw6P%2FbtqD3HC3lf7%2FWK2HAPXKyZxNpwoEkE3RkK%2Fimg.png)
 
 #
 

@@ -17,7 +17,7 @@
 
 ### 서버 기반 인증
 
-![image](https://user-images.githubusercontent.com/24283422/124378897-ee1ae800-dcee-11eb-98c6-579417a6b25a.png)
+<img src="https://user-images.githubusercontent.com/24283422/124378897-ee1ae800-dcee-11eb-98c6-579417a6b25a.png" width="600px">
 
 - = 세션 기반 인증
 - 서버 측에서 유저들의 정보 기억(저장)
@@ -30,7 +30,7 @@
 
 ### 토큰 기반 인증
 
-![image](https://user-images.githubusercontent.com/24283422/124378902-f83ce680-dcee-11eb-963d-26430d23cb76.png)
+<img src="https://user-images.githubusercontent.com/24283422/124378902-f83ce680-dcee-11eb-963d-26430d23cb76.png" width="600px">
 
 - 유저의 정보를 서버나 세션에 담아두지 않는다(stateless)
   - 메모리 과부화, 확장성 문제 해결

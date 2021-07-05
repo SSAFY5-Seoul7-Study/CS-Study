@@ -183,7 +183,7 @@
 - [REST API](https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/main/web/REST%20API.md)
 - 웹 서버와 WAS의 차이점
 - OAuth
-- JWT(JSON Web Token)
+- [JWT(JSON Web Token)](https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/main/web/JWT(JSON%20Web%20Token).md)
 - Authentication and Authorization
 - 로그 레벨
 - UI와 UX

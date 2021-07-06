@@ -184,7 +184,7 @@
 - 웹 서버와 WAS의 차이점
 - OAuth
 - [JWT(JSON Web Token)](<https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/main/web/JWT(JSON%20Web%20Token).md>)
-- [Authentication and Authorization](web/Authentication&Authorization)
+- [Authentication and Authorization](https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/main/web/Authentication%26Authorization.md)
 - 로그 레벨
 - UI와 UX
 - CSR & SSR

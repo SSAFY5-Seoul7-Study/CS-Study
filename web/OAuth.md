@@ -41,6 +41,7 @@ OAuth
 ![스크린샷 2021-07-06 오후 7 17 37](https://user-images.githubusercontent.com/17819249/124584127-d8442900-de8e-11eb-8ff8-f3bf5ba6fb68.png)
 
 **방문증으로 사전에 허락된 공간에만 출입이 가능하다.**
+
 즉, Access Token(방문증)을 갖고 있는 Consumer는 사전에 호출이 허락된 Service Provider의 오픈 API를 호출할 수 있는 것이다!
 
 ### OAuth2.0
@@ -51,10 +52,11 @@ OAuth1.0의 여러 단점들을 개선한 것으로 최종안은 없지만 여�
 - 웹 애플리케이션이 아닌 애플리케이션 지원 강화
 - 암호화가 필요 없음 HTTPS를 사용하고 HMAC을 사용하지 않는다.
 - Siganature 단순화 정렬과 URL 인코딩이 필요 없다.
-- Access Token 갱신 OAuth 1.0에서 Access Token을 받으면 Access Token을 계속 사용할 수 있었다. 트위터의 경우에는 Access Token을 만료시키지 않는다. OAuth 2.0에서는 보안 강화를 위해 Access Token의 Life-time을 지정할 수 있도록 했다.
+- Access Token 갱신 OAuth 1.0에서 Access Token을 받으면 Access Token을 계속 사용할 수 있었다. OAuth 2.0에서는 보안 강화를 위해 Access Token의 Life-time을 지정할 수 있도록 했다.
 
 ![image](https://user-images.githubusercontent.com/17819249/124584644-746e3000-de8f-11eb-84a8-890eefe9e8a0.png)
 
 ### 참고
 [네이버 D2 - OAuth와 춤을](https://d2.naver.com/helloworld/24942)
-[OAuth] (https://ko.wikipedia.org/wiki/OAuth)
+
+[OAuth](https://ko.wikipedia.org/wiki/OAuth)

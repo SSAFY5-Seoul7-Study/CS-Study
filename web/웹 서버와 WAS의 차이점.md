@@ -1,7 +1,11 @@
 ## 웹 서버와 WAS의 차이점
 
 ### 정적 페이지와 동적 페이지  
-웹 서비스에서는 동적 컨텐츠와 정적 컨텐츠가 모두 필요하다!
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/58067265/124566333-e9d10500-de7d-11eb-97dd-f32bdffd73d3.png" height="200" width="450">
+<img src="https://user-images.githubusercontent.com/58067265/124566333-e9d10500-de7d-11eb-97dd-f32bdffd73d3.png" height="200" width="450">
+</div>
 
 ![image](https://user-images.githubusercontent.com/58067265/124482905-bb531b80-dde4-11eb-96d6-4ebfeb03f719.png)
 
@@ -11,6 +15,20 @@
 |작성자가 소수이고 콘텐츠 변화가 드문 사이트에 적합   |   |
 
 예를 들어, 다양한 사용자의 사이트에서 정적 페이지로 서비스를 만든다면 사용자 마다 폴더를 갖고 그 안에 html이나 md 파일을 저장해서 해당하는 파일을 전달할 것 같다. (말도 안되는 일..!)  
+웹 서비스에서는 동적 컨텐츠와 정적 컨텐츠가 모두 필요하다!
+
+```bash
+├── 김유진
+│   ├── 알고리즘
+│   ├── 웹
+│   └── 그냥
+├── 김싸피
+│   ├── 취업준비
+│   ├── 알고리즘
+│   ├── 웹
+│   └── 일상
+└── 김땡땡
+``` 
 
 ---
 
@@ -122,3 +140,4 @@ docker run —name nginx -d -p 80:80 -v /home/ec2-user/dist/:/usr/share/nginx/ht
 ### 출처
 https://doorisopen.github.io/developers-library/Interview/2020-01-30-interview-server-dev-interview-list
 https://gmlwjd9405.github.io/2018/10/27/webserver-vs-was.html 👏
+https://itgit.co.kr/static_dynamic_content/

@@ -137,6 +137,12 @@
 
 <br/>
 
+> 토큰 저장 공간에 따른 JWT 보안 취약점
+> 1. 웹 스토리지 저장 : XSS 공격
+> 2. 쿠키 저장 : CSRF 공격
+
+<br/>
+
 ## JWT 인증과정 ⭐⭐⭐
 
 ### Access Token만 사용
@@ -192,7 +198,7 @@
 
 13. 서버는 받은 Access Token이 조작되지 않았는지 확인한 후, Refresh Token과 사용자의 DB에 저장되어 있던 Refresh Token을 비교한다. Token이 동일하고 유효기간도 지나지 않았다면 새로운 Access Token을 발급해준다.
 
-14. 서버는 새로운 Access Token을 헤더에 실어 다시 API 요청을 진행한다.
+14. 는 새로운 Access Token을 헤더에 실어 다시 API 요청을 진행한다.
 
 #
 
@@ -201,3 +207,4 @@
 - https://mangkyu.tistory.com/56
 - https://tansfil.tistory.com/58
 - https://velog.io/@djaxornwkd12/%EC%84%B8%EC%85%98-%EA%B8%B0%EB%B0%98-%EC%9D%B8%EC%A6%9D-%EB%B0%A9%EC%8B%9D-vs-%ED%86%A0%ED%81%B0-%EA%B8%B0%EB%B0%98-%EC%9D%B8%EC%A6%9D
+- https://backend-intro.vlpt.us/4/

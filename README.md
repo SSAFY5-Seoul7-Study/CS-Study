@@ -181,7 +181,7 @@
 - [쿠키(Cookie) & 세션(Session)](<https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/main/web/%EC%BF%A0%ED%82%A4(Cookie)%20vs%20%EC%84%B8%EC%85%98(Session).md>)
 - [HTTP Status Code](https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/main/web/HTTP%20StatusCode.md)
 - [REST API](https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/main/web/REST%20API.md)
-- 웹 서버와 WAS의 차이점
+- [웹 서버와 WAS의 차이점](https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/main/web/%EC%9B%B9%20%EC%84%9C%EB%B2%84%EC%99%80%20WAS%EC%9D%98%20%EC%B0%A8%EC%9D%B4%EC%A0%90.md)
 - OAuth
 - [JWT(JSON Web Token)](<https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/main/web/JWT(JSON%20Web%20Token).md>)
 - [Authentication and Authorization](https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/main/web/Authentication%26Authorization.md)

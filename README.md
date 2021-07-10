@@ -86,7 +86,7 @@
   - [IPC(Inter Process Communication)](<https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/main/Computer%20Science/Operation%20System/IPC(Inter%20Process%20Communication).md>)
   - [CPU 스케줄링](https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/b97e1e1343941f5a39c3c956909c28041fac2568/Computer%20Science/Operation%20System/CPU%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81.md)
   - [데드락(DeadLock)](https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/main/Computer%20Science/Operation%20System/DeadLock.md)
-  - [Race Condition](https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/092122b447880d152a65a6c52f8ede4c0d44d421/Computer%20Science/Operation%20System/Race%20Condition.md)
+  - [Race Condition](https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/main/Computer%20Science/Operation%20System/Race%20Condition.md)
   - 세마포어(Semaphore) & 뮤텍스(Mutex)
   - 페이징 & 세그먼테이션 (PDF)
   - 페이지 교체 알고리즘

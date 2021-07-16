@@ -88,7 +88,7 @@
   - [데드락(DeadLock)](https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/main/Computer%20Science/Operation%20System/DeadLock.md)
   - [Race Condition](https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/main/Computer%20Science/Operation%20System/Race%20Condition.md)
   - 세마포어(Semaphore) & 뮤텍스(Mutex)
-  - 페이징 & 세그먼테이션 (PDF)
+  - [페이징 & 세그먼테이션 (PDF)]()
   - 페이지 교체 알고리즘
   - 메모리(Memory)
   - 파일 시스템

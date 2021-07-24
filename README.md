@@ -77,7 +77,7 @@
 
 - ### Operating System
 
-  - 운영체제란
+  - [운영체제 면접질문](https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/main/Computer%20Science/Operation%20System/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%20%EB%A9%B4%EC%A0%91%EC%A7%88%EB%AC%B8.md)
   - [프로세스 vs 스레드](https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/fea6559da51bbcdca45e097afd75a7821a72cfc8/Computer%20Science/Operation%20System/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4&%EC%8A%A4%EB%A0%88%EB%93%9C.md)
   - [프로세스 주소 공간](https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/main/Computer%20Science/Operation%20System/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%20%EC%A3%BC%EC%86%8C%20%EA%B3%B5%EA%B0%84.md)
   - [인터럽트(Interrupt)](https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/main/Computer%20Science/Operation%20System/%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8.md)
@@ -91,7 +91,7 @@
   - [페이징 & 세그먼테이션](https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/863f38fdc18abde59a0a3145b5f2ccddbc94993a/Computer%20Science/Operation%20System/%ED%8E%98%EC%9D%B4%EC%A7%95&%EC%84%B8%EA%B7%B8%EB%A8%BC%ED%85%8C%EC%9D%B4%EC%85%98.md)
   - [페이지 교체 알고리즘](https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/main/Computer%20Science/Operation%20System/%ED%8E%98%EC%9D%B4%EC%A7%80%20%EA%B5%90%EC%B2%B4%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
   - [메모리(Memory)](https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/main/Computer%20Science/Operation%20System/%EB%A9%94%EB%AA%A8%EB%A6%AC(Memory).md)
-  - 파일 시스템
+  - [파일 시스템](https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/main/Computer%20Science/Operation%20System/%ED%8C%8C%EC%9D%BC%EC%8B%9C%EC%8A%A4%ED%85%9C.md)
 
   <br>
 

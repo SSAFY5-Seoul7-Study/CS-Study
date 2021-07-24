@@ -36,8 +36,8 @@ CPU에 의해 생성된 주소, 가상 주소
 
 ### MMU란?
 
-- Memory Managemeny Unit
-- 주소 결속(논리 주소 -> 물리 주소) 변환하는 역할
+- Memory Management Unit
+- 주소 결속(논리 주소 -> 물리 주소 변환) 역할
 - 메모리 보호나 캐시 관리 등 CPU가 메모리에 접근하는 것을 관리해주는 하드웨어
 
 <br/>

@@ -69,7 +69,7 @@
   - TCP/IP 흐름제어 & 혼잡제어
   - UDP
   - 대칭키 & 공개키
-  - [HTTP & HTTPS](https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/42fed68dd2d882b01d1d792b2ed370dce0485b90/Computer%20Science/Network/HTTP%20&%20HTTPS.md)
+  - [HTTP & HTTPS](https://github.com/SSAFY5-Seoul7-Study/CS-Study/blob/39f43ac4bf3679eb212f8758809a41b7372ec864/Computer%20Science/Network/HTTP%20&%20HTTPS.md)
   - 로드 밸런싱(Load Balancing)
   - Blocking & Non-Blocking I/O
 

@@ -41,17 +41,34 @@ Why? 서버와 다수의 클라이언트를 연결을 유지하기 위한 리소
 - 공인된 '인증 기관'에게 내 서버의 '주민등록증'(SSL인증서)을 발급받고, '브라우저'와 통신할 때마다 제시하며 "나 인증받은 서버야." 라고 알리는 방식(HTTPS)이다.
 - SSL : SSL 인증서를 통해 서버의 신원을 확인하고 데이터를 암호화 하여 통신하는 보안 방식
 
-출처: https://curryyou.tistory.com/207 [카레유]
+
 
 - 공개키 암호화 방식과 대칭키 암호화 방식 함께 사용
 
 ![image](https://t1.daumcdn.net/cfile/tistory/99F0FA445C456BB809)
+
 웹브라우저 : 인증기관 공개키(인증서 복호화)
 <br>
 인증서 : 사이트 정보, 공개키
+
 ![image](https://t1.daumcdn.net/cfile/tistory/993364345C457AED30)
 ![image](https://t1.daumcdn.net/cfile/tistory/9997354E5C457AF229)
+
+#
+
+### Q. HTTPS 란?
+- HTTP + SSL
+- 제3자 인증, 공개키 암호화, 대칭키 암호화를 사용
+- 데이터를 암호화 할 수 있고, 통신하려는 상대를 보증 가능
+### Q. 왜 공개키 암호화와 비밀?(대칭)키 암호화를 복합적으로 사용 ? 
+
+- 상대적으로 공개키 암호화가 느리기 때문에 통신에 있어서 대칭키 암호화가 빠른 통신에 유용 -> 대칭키 암호화에서 키 공유의 문제를 공개키 암호화로 보완하고 대칭키를 통해 빠른 통신을 가능하게 함.
+
+#
+#
 
 [출처: HTTP 특성(비연결성, 무상태)과 구성요소 그리고 Restful API](https://victorydntmd.tistory.com/286)
 
 [출처 : [Web] HTTP와 HTTPS 및 차이점](https://mangkyu.tistory.com/98)
+
+출처: https://curryyou.tistory.com/207 [카레유]
